@@ -1,0 +1,54 @@
+The project involves satellite imagery and therefore a number of libraries are used i this project.
+GEOSPATIAL LIBRARIES:
+!pip install gdal
+!pip install fiona
+!pip install osgeo
+!pip install shapely
+!pip install rasterio
+!pip install geopandas
+!pip install rioxarray
+!pip install xarray
+!pip install earthpy
+
+
+Libraries for calculating the clear sky irradiance
+!pip install pvlib
+
+Libraries for downloading satreloite images by the sftp protocol
+!pip install pysftp
+
+
+importing necessary libraries
+import os
+import shutil
+import h5py
+import glob
+import rasterio as rio
+import rasterio.plot
+import numpy as np
+import pandas as pd
+from tabulate import tabulate
+import matplotlib.pyplot as plt
+from PIL import Image
+import cv2 as cv
+from numpy import savetxt
+import pysftp
+import math
+import datetime
+from PIL import Image
+import geopandas as gd
+import rioxarray as rxr
+import xarray as xr
+from shapely.geometry import mapping, box
+import earthpy as et
+import earthpy.plot as ep
+import base64
+import numpy.ma as ma
+import pvlib
+from pvlib import *
+from pvlib.location import Location
+from blockmatching import *
+from datetime import timedelta
+from types import LambdaType
+from sklearn.metrics import mean_squared_error
+from math import sqrt
